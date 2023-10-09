@@ -43,6 +43,7 @@ public class PartController {
             //@PathVariable = Da endrer man i url path i Postman
     public ResponseEntity<String> updatePart(@PathVariable Part name, @RequestBody Part newName){
          partsService.updatePart(name, newName);
+        System.out.println("Hey");
          return ResponseEntity.ok("part replaced" + name.name() + ", with:" + newName.name());
     }
 }
