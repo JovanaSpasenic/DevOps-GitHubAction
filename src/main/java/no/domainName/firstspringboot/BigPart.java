@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 //JsonIgnoreProperties -->able to handle no values and thats also because of RequiredArgConstructor
 public class BigPart {
 
-    private String partName;
+    private String partsName;
     private int partNumber;
     private int numberOfChickens;
 
