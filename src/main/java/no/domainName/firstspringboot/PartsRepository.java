@@ -1,9 +1,13 @@
 package no.domainName.firstspringboot;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
 @Component
 public class PartsRepository { //When making repository --> anitate --> @Component
+    private final Logger log = LoggerFactory.getLogger(PartsRepository.class);
+
     //ArrayList of list of parts
     private ArrayList<Part> parts = new ArrayList<>();
 
