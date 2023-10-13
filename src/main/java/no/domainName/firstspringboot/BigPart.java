@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 //JsonIgnoreProperties -->able to handle no values and thats also because of RequiredArgConstructor
 public class BigPart {
 
-    private String partsName;
+    private String partsName; //Endret navnet fra partName til partsName før jeg committet for å deploye til azure
     private int partNumber;
     private int numberOfChickens;
 

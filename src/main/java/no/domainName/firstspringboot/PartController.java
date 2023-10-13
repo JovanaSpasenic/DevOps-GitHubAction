@@ -22,7 +22,9 @@ public class PartController {
     //}
     @GetMapping() //if you go to "api/parts" then you will get this method
     public ResponseEntity<List<Part>> getParts(){
+        System.out.println("Hey");
         return ResponseEntity.ok(partsService.getParts());
+
     }
 
     @PostMapping() //@Requestbody =
